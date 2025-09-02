@@ -1,0 +1,35 @@
+package Com.Sample;
+public class ThisConstructor {
+    String name;
+	int age;
+	ThisConstructor(){
+		this.name="Ashwini";
+		this.age=18;
+	}
+	//constructor with one parametrised
+	ThisConstructor(String name){
+		this.name=name;
+		this.age=0;
+	}
+    //constructor with two parametrised
+	ThisConstructor(String name,int age){
+		this.name=name;
+		this.age=age;
+	}
+	void display() {
+		System.out.println("Name :"+name+"  Age :"+age);
+	}
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		ThisConstructor t1=new ThisConstructor();
+		ThisConstructor t2=new ThisConstructor("Ash");
+		ThisConstructor t3=new ThisConstructor("ASHWINI",18);
+		t1.display();
+		t2.display();
+		t3.display();
+	}
+}
+OUTPUT:
+Name :Ashwini  Age :18
+Name :Ash  Age :0
+Name :ASHWINI  Age :18
