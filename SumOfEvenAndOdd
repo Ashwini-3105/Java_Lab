@@ -1,0 +1,45 @@
+package Com.Sample;
+import java.util.Scanner;
+public class Sum {
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		int sum1=0,sum2=0;
+		System.out.println("Enter n:");
+		int n=sc.nextInt();
+		int[] A=new int[n];
+		for(int i=0;i<n;i++) {
+			System.out.println("Enter a value:");
+			A[i]=sc.nextInt();
+		}
+		System.out.println("The ARRAY elments are:");
+		for(int i=0;i<n;i++) {
+			System.out.print(" "+A[i]);
+			if(A[i]%2==0) {
+				sum1+=A[i];
+			}
+			else {
+				sum2+=A[i];
+			}
+		}
+		System.out.println("\nEven sum: "+sum1);
+		System.out.println("Odd sum: "+sum2);	
+	}
+
+}
+OUTPUT:
+Enter n:
+5
+Enter a value:
+1
+Enter a value:
+2
+Enter a value:
+3
+Enter a value:
+4
+Enter a value:
+5
+The ARRAY elments are:
+ 1 2 3 4 5
+Even sum: 6
+Odd sum: 9
