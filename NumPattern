@@ -1,0 +1,30 @@
+package Com.Sample;
+import java.util.Scanner;
+
+public class NumPattern {
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		System.out.println("ENter n: ");
+		int n=sc.nextInt();
+		for(int i=1;i<=n;i++) {
+			for(int j=i;j>0;j--) {
+				System.out.print(j);
+			}
+			for(int k=2;k<=i;k++) {
+				System.out.print(k);
+			}
+			System.out.println();
+		}
+		sc.close();
+		
+	}
+
+}
+OUTPUT:
+ENter n: 
+5
+1
+212
+32123
+4321234
+543212345
