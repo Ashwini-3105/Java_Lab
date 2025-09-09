@@ -1,0 +1,64 @@
+package Com.Sample;
+import java.util.Scanner;
+public class DupliInArray {
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter size of array:");
+		int n1=sc.nextInt();
+		int[] A=new int[n1];
+		for(int i=0;i<n1;i++) {
+			System.out.println("Enter value:");
+			A[i]=sc.nextInt();
+			
+		}
+		System.out.println(" 1st Array elements are:");
+		for(int i=0;i<n1;i++) {
+			System.out.print(A[i]+" ");
+		}
+		System.out.println("Enter size of array:");
+		int n2=sc.nextInt();
+		int[] B=new int[n2];
+		for(int i=0;i<n2;i++) {
+			System.out.println("Enter value:");
+			B[i]=sc.nextInt();
+			
+		}
+		System.out.println(" 2nd Array elements are:");
+		for(int i=0;i<n2;i++) {
+			System.out.print(B[i]+" ");
+		}
+		System.out.println("\nCommon elements are:");
+		for(int i=0;i<n1;i++) {
+			for(int j=0;j<n2;j++) {
+				if(A[i]==B[j]) {
+					System.out.print(A[i]+" ");
+				}
+			}
+			
+		}
+			
+	}
+
+}
+OUTPUT:
+Enter size of array:
+3
+Enter value:
+2
+Enter value:
+3
+Enter value:
+4
+ 1st Array elements are:
+2 3 4 Enter size of array:
+3
+Enter value:
+1
+Enter value:
+2
+Enter value:
+3
+ 2nd Array elements are:
+1 2 3 
+Common elements are:
+2 3 
