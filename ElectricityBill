@@ -1,0 +1,38 @@
+package Com.Sample;
+import java.util.Scanner;
+public class ElectricityBill {
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter oldreading value: ");
+		int oldReading=sc.nextInt();
+		System.out.println("Enter currentreading value: ");
+		int curReading=sc.nextInt();
+		int units=oldReading+curReading;
+		System.out.println("Total units: "+units);
+		if(units>0 &&units<=50) {
+			System.out.println("Charge is: "+units*1);
+		}
+		else if(units>50 && units<=100) {
+			System.out.println("Charge is: "+units*2);
+		}
+		else if(units>100 && units<=200) {
+			System.out.println("Charge is: "+units*3);
+		}
+		else if(units>200 && units<=400) {
+			System.out.println("Charge is: "+units*4);
+		}
+		else {
+			System.out.println("Charge is: "+units*5);
+		}
+		
+		
+	}
+
+}
+OUTPUT:
+Enter oldreading value: 
+50
+Enter currentreading value: 
+100
+Total units: 150
+Charge is: 450
