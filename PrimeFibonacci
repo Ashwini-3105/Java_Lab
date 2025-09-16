@@ -1,0 +1,37 @@
+package Com.Sample;
+import java.util.Scanner;
+public class PrimeFibonacci {
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		int n=sc.nextInt();
+		int a=0,b=1;
+		System.out.println("Prime Fibonacci numbers:");
+
+        for (int i = 0; i < n; i++) {
+            if (isPrime(a)) {
+            	    if(a<=n) {            	
+                  System.out.print(a + " ");
+            }
+            }
+            int c = a + b;
+            a = b;
+            b = c;}
+        }
+        public static boolean isPrime(int num) {
+            if (num < 2) return false;
+            if (num == 2) return true;
+            if (num % 2 == 0) return false;
+
+            for (int i = 3; i <= Math.sqrt(num); i += 2) {
+                if (num % i == 0)
+                    return false;
+            }
+            return true;
+
+	}
+
+}
+OUTPUT:
+20
+Prime Fibonacci numbers:
+2 3 5 13 
